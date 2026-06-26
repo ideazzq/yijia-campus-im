@@ -1,0 +1,87 @@
+.ownMessage {
+  align-self: flex-end;
+  margin-top: 1rem;
+  max-width: 75%;
+}
+
+.othersMessage {
+  align-self: flex-start;
+  margin-top: 1rem;
+  max-width: 75%;
+}
+
+.date {
+  align-self: center;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.bubbleContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.contentContainer {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  text-wrap: wrap;
+  word-break: break-word;
+}
+
+.fileCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: rgba(15, 71, 92, 0.06);
+  border: 1px solid rgba(15, 71, 92, 0.1);
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.fileName,
+.fileMeta {
+  margin: 0;
+}
+
+.fileName {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.fileMeta {
+  font-size: 0.76rem;
+  color: #60717a;
+  margin-top: 0.25rem;
+}
+
+.timeContainer {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.messageCardInnerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+
+.readState {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #6b7d85;
+}

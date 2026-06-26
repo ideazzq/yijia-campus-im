@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC",
+    -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+  background:
+    radial-gradient(circle at top, rgba(17, 112, 238, 0.12), transparent 24%),
+    radial-gradient(circle at right bottom, rgba(22, 165, 106, 0.12), transparent 22%),
+    linear-gradient(180deg, #eefaff 0%, #f8fdff 100%);
+  color: #12314d;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

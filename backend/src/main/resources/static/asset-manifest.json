@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.41bb65e1.css",
+    "main.js": "/static/js/main.772ac48d.js",
+    "static/media/yijia-logo.png": "/static/media/yijia-logo.71e50daa303cc6fd289a.png",
+    "index.html": "/index.html",
+    "main.41bb65e1.css.map": "/static/css/main.41bb65e1.css.map",
+    "main.772ac48d.js.map": "/static/js/main.772ac48d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41bb65e1.css",
+    "static/js/main.772ac48d.js"
+  ]
+}

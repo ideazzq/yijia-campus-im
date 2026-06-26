@@ -1,0 +1,298 @@
+.page {
+  min-height: 100vh;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background:
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.16), transparent 22%),
+    linear-gradient(180deg, #edf4ff 0%, #f6f9ff 42%, #fbfcff 100%);
+}
+
+.header {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 1.2rem 1.4rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(214, 225, 248, 0.96);
+  box-shadow: 0 18px 48px rgba(28, 63, 128, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 3.7rem;
+  height: 3.7rem;
+  object-fit: contain;
+}
+
+.brand p,
+.brand h1 {
+  margin: 0;
+}
+
+.brand p {
+  color: #69786f;
+  font-size: 0.9rem;
+}
+
+.brand h1 {
+  color: #17241d;
+  font-size: 1.32rem;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.hero,
+.metrics,
+.mainGrid {
+  max-width: 1360px;
+  margin: 1.3rem auto 0;
+}
+
+.hero {
+  padding: 2rem 2.2rem;
+  border-radius: 32px;
+  background:
+    linear-gradient(180deg, rgba(248, 251, 255, 0.96), rgba(238, 244, 255, 0.95));
+  border: 1px solid rgba(214, 225, 248, 0.96);
+  box-shadow: 0 20px 50px rgba(28, 63, 128, 0.05);
+}
+
+.eyebrow {
+  display: inline-flex;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(220, 230, 222, 0.96);
+  color: #5d7064;
+  font-size: 0.88rem;
+}
+
+.heroCopy h2,
+.heroCopy p,
+.heroMeta span {
+  margin: 0;
+}
+
+.heroCopy h2 {
+  margin-top: 1rem;
+  color: #17241d;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  line-height: 1.28;
+}
+
+.heroCopy p {
+  margin-top: 0.95rem;
+  max-width: 58rem;
+  color: #67776e;
+  line-height: 1.9;
+}
+
+.heroMeta {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #2452a4;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metricCard {
+  padding: 1.4rem 1.5rem;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(214, 225, 248, 0.95);
+  box-shadow: 0 18px 46px rgba(28, 63, 128, 0.05);
+}
+
+.metricCard span,
+.metricCard strong {
+  display: block;
+}
+
+.metricCard span {
+  color: #6b7a72;
+  font-size: 0.92rem;
+}
+
+.metricCard strong {
+  margin-top: 0.65rem;
+  color: #16241c;
+  font-size: 2.4rem;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 1rem;
+}
+
+.usersPanel,
+.broadcastPanel {
+  padding: 1.4rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(214, 225, 248, 0.95);
+  box-shadow: 0 18px 46px rgba(28, 63, 128, 0.05);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sectionHeader h3,
+.sectionHeader p {
+  margin: 0;
+}
+
+.sectionHeader h3 {
+  color: #17241d;
+  font-size: 1.3rem;
+}
+
+.sectionHeader p {
+  margin-top: 0.35rem;
+  color: #69796f;
+}
+
+.userTable {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableHead,
+.tableRow {
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 0.8fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tableHead {
+  padding: 0.95rem 1rem;
+  color: #718078;
+  font-size: 0.88rem;
+  border-bottom: 1px solid rgba(230, 235, 231, 0.95);
+}
+
+.tableRow {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(236, 240, 237, 0.95);
+}
+
+.tableRow strong,
+.tableRow p,
+.tableRow span,
+.statusCol small {
+  margin: 0;
+}
+
+.tableRow strong {
+  display: block;
+  color: #1a2820;
+}
+
+.tableRow p,
+.tableRow span {
+  color: #69776f;
+  font-size: 0.92rem;
+}
+
+.statusCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.broadcastForm {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.broadcastForm :global(.MuiOutlinedInput-root) {
+  background: rgba(249, 251, 249, 0.94);
+  border-radius: 18px;
+}
+
+.broadcastForm :global(.MuiButton-contained) {
+  align-self: flex-start;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #2563eb 0%, #1558d6 100%);
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.22);
+}
+
+.noticeCard {
+  margin-top: 1.4rem;
+  padding: 1.2rem 1.3rem;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(244, 248, 255, 0.98), rgba(250, 252, 255, 0.96));
+  border: 1px solid rgba(214, 225, 248, 0.95);
+}
+
+.noticeCard h4,
+.noticeCard ul {
+  margin: 0;
+}
+
+.noticeCard h4 {
+  color: #1c2d23;
+}
+
+.noticeCard ul {
+  margin-top: 0.8rem;
+  padding-left: 1.1rem;
+  color: #607068;
+  line-height: 1.9;
+}
+
+@media (max-width: 1100px) {
+  .metrics,
+  .mainGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .header,
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metrics,
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tableHead,
+  .tableRow {
+    grid-template-columns: 1fr;
+  }
+}

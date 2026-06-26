@@ -1,0 +1,24 @@
+.welcomeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background:
+    linear-gradient(180deg, rgba(248, 250, 251, 0.96), rgba(248, 250, 251, 0.96)),
+    radial-gradient(circle at top right, rgba(24, 176, 109, 0.08), transparent 28%);
+}
+
+.innerWelcomeContainer {
+  text-align: center;
+  color: #39505e;
+}
+
+.innerWelcomeContainer h1 {
+  color: #18222c;
+}
+
+.innerWelcomeContainer p {
+  max-width: 26rem;
+  margin: 0 auto;
+  line-height: 1.8;
+}

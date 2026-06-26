@@ -1,0 +1,43 @@
+# Java / Maven
+backend/target/
+backend/*.jar
+*.jar
+*.war
+
+# Node / npm
+node_modules/
+frontend/build/
+frontend/.cache/
+desktop-shell/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.settings/
+.classpath
+.project
+.factorypath
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Env
+.env
+.env.local
+
+# Database (local H2 files)
+.yijia/
+**/yijia-uploads/
+
+# Electron build output
+dist/
+*.asar

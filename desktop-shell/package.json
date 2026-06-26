@@ -1,0 +1,67 @@
+{
+  "name": "yijia-campus-desktop-shell",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build:portable": "electron-builder --win portable --x64 --publish never",
+    "build:installer": "electron-builder --win nsis --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "28.3.3",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "artifactName": "翼家校园通信系统-安装包-${version}.${ext}",
+    "appId": "com.yijia.campus",
+    "productName": "翼家校园通信系统",
+    "asar": true,
+    "compression": "maximum",
+    "directories": {
+      "output": "../dist/electron"
+    },
+    "files": [
+      "main.js",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../dist/YijiaApp",
+        "to": "runtime/YijiaApp"
+      },
+      {
+        "from": "../frontend/src/assets/yijia-app-icon.png",
+        "to": "assets/yijia-app-icon.png"
+      },
+      {
+        "from": "../frontend/src/assets/yijia-logo.png",
+        "to": "assets/yijia-logo.png"
+      }
+    ],
+    "win": {
+      "icon": "../frontend/src/assets/yijia-logo.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "翼家校园通信系统",
+      "installerIcon": "../frontend/src/assets/yijia-logo.ico",
+      "uninstallerIcon": "../frontend/src/assets/yijia-logo.ico",
+      "installerHeaderIcon": "../frontend/src/assets/yijia-logo.ico",
+      "artifactName": "翼家校园通信系统-安装包-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "翼家校园通信系统.exe"
+    }
+  }
+}
