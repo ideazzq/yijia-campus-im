@@ -1,5 +1,10 @@
 # 翼家校园通信系统
 
+<p align="center">
+  <img src="images/screenshot1.png" width="400" alt="系统截图1"/>
+  <img src="images/screenshot2.png" width="400" alt="系统截图2"/>
+</p>
+
 一个基于 **Spring Boot + React + Electron** 全栈架构的校园即时通信桌面应用，支持用户注册登录、好友管理、单聊群聊、文件传输、在线状态展示与管理员广播功能。
 
 ## 项目简介
