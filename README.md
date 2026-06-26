@@ -1,6 +1,12 @@
 # 翼家校园通信系统
 
 <p align="center">
+  <a href="https://github.com/ideazzq/yijia-campus-im/releases/latest">
+    <img src="https://img.shields.io/badge/下载-桌面运行包-brightgreen?logo=windows" alt="下载桌面运行包"/>
+  </a>
+</p>
+
+<p align="center">
   <img src="images/screenshot1.png" width="400" alt="系统截图1"/>
   <img src="images/screenshot2.png" width="400" alt="系统截图2"/>
 </p>
