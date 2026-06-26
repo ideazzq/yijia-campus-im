@@ -51,6 +51,31 @@
 - 管理员广播加密传输（XOR + Base64）
 - Windows 桌面端打包（便携版 / 安装包）
 
+## 桌面运行包（Release 下载）
+
+如果你只想使用系统而非开发代码，可直接从 [GitHub Releases](https://github.com/ideazzq/yijia-campus-im/releases/latest) 下载 `yijia-campus-runtime-v1.0.zip`（约 224 MB）：
+
+```
+yijia-campus-runtime-v1.0.zip
+├── WeiLiaoDesktopBundle_extracted/   # Electron 运行时 + 后端 JAR
+├── 启动程序.bat                      # 双击启动
+├── 启动程序.vbs                      # 无窗口启动（可选）
+└── README.md
+```
+
+### 使用方法
+
+1. 解压到任意目录
+2. 双击 **启动程序.bat**
+3. 默认账号登录：`lin.yan@yijia.cn` / `123456`
+
+默认连接本地后端（`127.0.0.1:8080`）。如需连接远程服务器（多机聊天），在同目录创建 `config.json`：
+```json
+{"serverBaseUrl": "http://你的服务器IP"}
+```
+
+> 该运行包是脱机单机包，Electron 运行时和内嵌 H2 数据库已打包在内，解压即用，无需安装 JDK、Node.js。
+
 ## 目录结构
 
 ```
